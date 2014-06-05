@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?wsdl" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.wsdl"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?WSDL=TaskServiceInterface.wsdl" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.WSDL_TaskServiceInterface.wsdl"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=WorkflowTask.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_WorkflowTask.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=TaskService.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_TaskService.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=RoutingSlip.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_RoutingSlip.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=TaskSequenceChanges.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_TaskSequenceChanges.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=TaskEvidenceService.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_TaskEvidenceService.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=WorkflowCommon.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_WorkflowCommon.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskService/TaskServicePort?XSD=RoutingSlipList.xsd" uri="wsdl/bpm01_8051/integration/services/TaskService/TaskServicePort.XSD_RoutingSlipList.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?wsdl" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.wsdl"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?WSDL=TaskQueryServiceInterface.wsdl" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.WSDL_TaskQueryServiceInterface.wsdl"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=WorkflowCommon.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_WorkflowCommon.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=WorkflowTask.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_WorkflowTask.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=UserMetadata.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_UserMetadata.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=TaskQueryService.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_TaskQueryService.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=TaskEvidenceService.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_TaskEvidenceService.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=TaskQuery.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_TaskQuery.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=WorkflowTaskError.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_WorkflowTaskError.xsd"/>
+    <system systemId="http://bpm01:8051/integration/services/TaskQueryService/TaskQueryService?XSD=TaskSequenceChanges.xsd" uri="wsdl/bpm01_8051/integration/services/TaskQueryService/TaskQueryService.XSD_TaskSequenceChanges.xsd"/>
+</catalog>

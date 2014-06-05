@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <nextCatalog catalog="../../../Users/SYSCO01/AppData/Local/NetBeans/Cache/8.0/mavencachedirs/1289477670/retriever/catalog.xml"/>
+    <system systemId="file:/C:/dev/htjavaee/htcore/src/main/resources/xsd/Humantask1Payload.xsd" uri="src/main/resources/jaxb/Humantask1Payload/Humantask1Payload.xsd"/>
+    <system systemId="file:/C:/dev/htjavaee/htcore/src/main/resources/xsd/ProcessSchema.xsd" uri="src/main/resources/jaxb/Humantask1Payload/ProcessSchema.xsd"/>
+</catalog>
