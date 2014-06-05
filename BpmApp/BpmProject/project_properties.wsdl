@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/bpmn/bpmnProcess/BpmProject" xmlns:tns="http://xmlns.oracle.com/bpmn/bpmnProcess/BpmProject"  xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"  xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"  xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" />

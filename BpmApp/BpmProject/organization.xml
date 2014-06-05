@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20090820"?>
+<ns1:organization xmlns:ns2="http://xmlns.oracle.com/bpm/lpg/peopleQuery" xmlns:ns1="http://xmlns.oracle.com/bpm/organization" xmlns:ns4="http://xmlns.oracle.com/bpel/workflow/task" xmlns:ns3="http://xmlns.oracle.com/bpel/workflow/taskQuery" xmlns:ns5="http://xmlns.oracle.com/bpm/identity">
+    <ns1:updateExistingObjects>false</ns1:updateExistingObjects>
+    <ns1:organizationalUnits/>
+    <ns1:applicationRoles>
+        <ns1:applicationRole id="BpmProject.ProcessOwner" isProcessRole="false">
+            <ns5:name>BpmProject.Process Owner</ns5:name>
+            <ns1:processRole id="ProcessOwner" name="Process Owner"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="BpmProject.Role" isProcessRole="true">
+            <ns5:name>BpmProject.Role</ns5:name>
+            <ns1:processRole id="Role" name="Role"/>
+        </ns1:applicationRole>
+    </ns1:applicationRoles>
+    <ns1:applicationRoleOrgUnitCalendarAssociations/>
+    <ns1:participantPropertiesList/>
+    <ns1:holidayRules/>
+    <ns1:calendarRules/>
+</ns1:organization>

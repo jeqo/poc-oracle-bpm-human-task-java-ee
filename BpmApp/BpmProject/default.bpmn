@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions fileRevision="20120217" version="11.1.1.7.0.0.8" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/DD/20100524/DI" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns4="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns5="http://xmlns.oracle.com/bpm/OracleExtensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <process processType="Public" isExecutable="true" name="default" id="default">
+        <extensionElements>
+            <ns5:OracleExtensions>
+                <ns5:FeatureSet>
+                    <ns5:BooleanFeature value="false" name="atomic"/>
+                    <ns5:BooleanFeature value="false" name="instanceScreenflow"/>
+                    <ns5:BooleanFeature value="true" name="relative-coordinates"/>
+                    <ns5:BooleanFeature value="true" name="sharePredefineVariables"/>
+                    <ns5:BooleanFeature value="true" name="suspendInstanceOnDataAssociationError"/>
+                    <ns5:StringFeature value="" name="ANALYTICS_VIEW_IDENTIFIER"/>
+                    <ns5:StringFeature value="" name="AUTHOR"/>
+                    <ns5:StringFeature value="default" name="GreedyExecutionMode"/>
+                    <ns5:StringFeature value="" name="NAMESPACE"/>
+                    <ns5:StringFeature value="PROJECT_DEFAULT" name="generatesEvents"/>
+                    <ns5:StringFeature value="HORIZONTAL_LAYOUT" name="process-layout"/>
+                    <ns5:StringFeature value="1.0" name="scale"/>
+                    <ns5:StringFeature value="REGULAR" name="sealType"/>
+                </ns5:FeatureSet>
+                <ns5:CorrelationPropertyAliasExpressionModeMap/>
+                <ns5:Conversations>
+                    <ns5:Conversation id="CONVERSATION100383872352" type="define_interface">
+                        <ns5:DefineInterfaceConversationDefinition exposeSOAPService="true"/>
+                    </ns5:Conversation>
+                </ns5:Conversations>
+                <ns5:ApplicationInfo>
+                    <ns5:AppLinkName/>
+                    <ns5:Description/>
+                    <ns5:AppTags/>
+                    <ns5:AppCategory/>
+                    <ns5:AppExternalDocuments/>
+                </ns5:ApplicationInfo>
+            </ns5:OracleExtensions>
+        </extensionElements>
+        <laneSet>
+            <lane name="AutomaticHandler" id="lane0">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="0" y="0"/>
+                            <ns5:Size width="450" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="AutomaticHandler"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+        </laneSet>
+        <startEvent isInterrupting="false" name="Start" id="EVT10038387234955">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="100" y="225"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="catchAllErrors"/>
+                        <ns5:BooleanFeature value="false" name="catchAllSystemExceptions"/>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                    <ns5:Conversational conversation="CONVERSATION100383872352">
+                        <ns5:DefineInterfaceConversationalDefinition definedOperationName="start"/>
+                    </ns5:Conversational>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <outputSet/>
+            <messageEventDefinition/>
+        </startEvent>
+        <endEvent name="End" id="EVT10038387235184">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="200" y="225"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="catchAllErrors"/>
+                        <ns5:BooleanFeature value="false" name="catchAllSystemExceptions"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                    <ns5:Conversational conversation="CONVERSATION100383872352">
+                        <ns5:DefineInterfaceConversationalDefinition definedOperationName="end"/>
+                    </ns5:Conversational>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <inputSet/>
+            <messageEventDefinition/>
+        </endEvent>
+        <sequenceFlow sourceRef="EVT10038387234955" targetRef="EVT10038387235184" name="sf6" id="sf6">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+    </process>
+</definitions>

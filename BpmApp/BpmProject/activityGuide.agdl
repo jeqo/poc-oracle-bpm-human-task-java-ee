@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tActivityGuide globalDisplayMode="always" globalTaskAccessMode="anyStates" id="activityGuide" xmlns="http://xmlns.oracle.com/bpmn/workflow/AGDefinition">
+    <title type="STATIC">
+        <value></value>
+    </title>
+    <description type="STATIC">
+        <value></value>
+    </description>
+    <resourceBundle name="ActivityGuide" location="" external="false"/>
+</tActivityGuide>

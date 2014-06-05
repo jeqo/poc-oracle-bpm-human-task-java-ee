@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<measurements xmlns="http://xmlns.oracle.com/bpm/analytics/measurement">
+    <compositeDN>BpmProject</compositeDN>
+    <measurementElements>
+        <measurementElement name="BpmProject" type="COMPOSITE" enabled="true">
+            <elementSelection>INTERACTIVE</elementSelection>
+            <elementStates>
+                <elementState>ALL</elementState>
+            </elementStates>
+        </measurementElement>
+    </measurementElements>
+</measurements>

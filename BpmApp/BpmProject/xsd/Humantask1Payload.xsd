@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.example.org/schema/processschema">
+   <import namespace="http://www.example.org/schema/processschema" schemaLocation="ProcessSchema.xsd"/>
+   <complexType name="Humantask1PayloadType">
+      <sequence>
+         <element name="dataObject" type="ns0:ProcessType"/>
+      </sequence>
+   </complexType>
+</schema>
