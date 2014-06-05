@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <script>
+            // get the current URL
+            var url = window.location.toString();
+            //get the parameters
+            url.match(/\?(.+)$/);
+            var params = RegExp.$1;
+            // split up the query string and store in an
+            // associative array
+            var params = params.split("&");
+            var queryStringList = {};
+
+            for (var i = 0; i < params.length; i++)
+            {
+                var tmp = params[i].split("=");
+                queryStringList[tmp[0]] = unescape(tmp[1]);
+            }
+
+            // print all querystring in key value pairs
+            for (var i in queryStringList)
+                document.write(i + " = " + queryStringList[i] + "<br/>");
+        </script>
+    </body>
+</html>
