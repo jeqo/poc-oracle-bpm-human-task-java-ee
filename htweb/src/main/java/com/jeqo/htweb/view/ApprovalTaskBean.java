@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.jeqo.htweb.view;
 
 import com.oracle.xmlns.bpel.workflow.task.Humantask1PayloadType;
@@ -26,14 +21,19 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import oracle.bpel.services.workflow.common.model.WorkflowContextType;
 import oracle.bpel.services.workflow.query.model.TaskDetailsByIdRequestType;
 import oracle.bpel.services.workflow.query.model.WorkflowContextRequestType;
 import oracle.bpel.services.workflow.task.model.Task;
+import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 /**
- *
+ * Only approve is implemented
+ * 
  * @author Jorge Quilcate
  */
 @ManagedBean
@@ -81,14 +81,17 @@ public class ApprovalTaskBean {
     }
 
     public String approve() {
-
         try {
-            payloadObject.setValue(payload);
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            dbf.setNamespaceAware(true);
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document payloadDocument = db.newDocument();
 
             JAXBContext jaxbContext = JAXBContext.newInstance("com.oracle.xmlns.bpel.workflow.task");
             Marshaller marshaller = jaxbContext.createMarshaller();
+            marshaller.marshal(payloadObject, payloadDocument);
 
-            marshaller.marshal(payloadObject, (Node) task.getPayload());
+            task.setPayload(payloadDocument.getDocumentElement());
 
             TaskService_Service taskServiceClient = new TaskService_Service();
             TaskService taskService = taskServiceClient.getTaskServicePort();
@@ -97,6 +100,7 @@ public class ApprovalTaskBean {
             updateTaskRequest.setTask(task);
             updateTaskRequest.setWorkflowContext(workflowContext);
 
+            //Updating task details
             task = taskService.updateTask(updateTaskRequest);
 
             UpdateTaskOutcomeType updateTaskOutcomeRequest = new UpdateTaskOutcomeType();
@@ -104,8 +108,9 @@ public class ApprovalTaskBean {
             updateTaskOutcomeRequest.setTask(task);
             updateTaskOutcomeRequest.setWorkflowContext(workflowContext);
 
+            //Updating task outcome
             taskService.updateTaskOutcome(updateTaskOutcomeRequest);
-        } catch (StaleObjectFaultMessage | com.oracle.xmlns.bpel.workflow.taskservice.WorkflowErrorMessage | JAXBException ex) {
+        } catch (StaleObjectFaultMessage | com.oracle.xmlns.bpel.workflow.taskservice.WorkflowErrorMessage | JAXBException | ParserConfigurationException ex) {
             Logger.getLogger(ApprovalTaskBean.class.getName()).log(Level.SEVERE, null, ex);
         }
 
@@ -113,7 +118,8 @@ public class ApprovalTaskBean {
     }
 
     public String reject() {
-        return "";
+        
+        return "completed";
     }
 
     public Humantask1PayloadType getPayload() {
